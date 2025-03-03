@@ -8,6 +8,10 @@ body {
   background-color: var(--gray-00);
 }
 
+body * {
+  overflow-x: hidden;
+}
+
 h1 {
   font-size: 1.25rem;
   font-weight: var(--font-weight-md);
