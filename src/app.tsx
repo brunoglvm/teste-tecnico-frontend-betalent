@@ -1,12 +1,10 @@
-import logo from "./assets/logo.svg";
+import { Header } from "@/components/header";
 
 export default function App() {
   return (
     <div>
-      <h1>teste1</h1>
-      <h2>teste2</h2>
-      <h3>teste3</h3>
-      <img src={logo} />
+      <Header />
+      <h1 style={{ padding: "3rem 1.25rem" }}>Funcionários</h1>
     </div>
   );
 }
