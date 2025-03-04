@@ -1,10 +1,10 @@
 import styles from "./header.module.css";
-import logo from "@/assets/logo.svg";
+import Logo from "@/assets/logo.svg?react";
 
 export function Header() {
   return (
     <div className={styles.header}>
-      <img src={logo} alt="Logo" />
+      <Logo className={styles.logo} aria-label="Logo BeTalent" />
     </div>
   );
 }

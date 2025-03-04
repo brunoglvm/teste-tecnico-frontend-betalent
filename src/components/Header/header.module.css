@@ -1,7 +1,7 @@
 .header {
   display: flex;
   align-items: center;
-  height: 60px;
+  height: 3.75rem;
   padding: 0.25rem 1.25rem;
   background-color: var(--white);
   box-shadow: var(--shadow-2);
@@ -9,6 +9,11 @@
 
 @media (max-width: 120px) {
   .header {
+    justify-content: center;
     padding: 0.1rem 0.5rem;
   }
+}
+
+.logo path {
+  fill: #222222;
 }
