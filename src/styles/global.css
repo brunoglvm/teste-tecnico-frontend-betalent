@@ -6,7 +6,8 @@ body {
   background-color: var(--gray-00);
 }
 
-body * {
+html,
+body {
   overflow-x: hidden;
 }
 

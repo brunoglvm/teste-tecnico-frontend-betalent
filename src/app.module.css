@@ -1,0 +1,23 @@
+.searchWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 0 2rem;
+}
+
+.titleContainer {
+  margin: 3rem 0;
+}
+
+@media (max-width: 768px) {
+  .searchWrapper {
+    flex-direction: column;
+    padding: 0 1.375rem;
+  }
+
+  .titleContainer {
+    align-self: flex-start;
+    margin: 1.75rem 0;
+  }
+}

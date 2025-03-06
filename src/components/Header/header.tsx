@@ -3,8 +3,8 @@ import Logo from "@/assets/logo.svg?react";
 
 export function Header() {
   return (
-    <div className={styles.header}>
+    <header className={styles.header}>
       <Logo className={styles.logo} aria-label="Logo BeTalent" />
-    </div>
+    </header>
   );
 }

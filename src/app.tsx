@@ -1,12 +1,18 @@
+import styles from "./app.module.css";
+
 import { Header } from "@/components/Header/header";
-import { SearchBar } from "./components/SearchBar/search-bar";
+import { SearchBar } from "@/components/SearchBar/search-bar";
 
 export default function App() {
   return (
-    <div>
+    <>
       <Header />
-      <h1 style={{ padding: "3rem 1.25rem" }}>Funcionários</h1>
-      <SearchBar />
-    </div>
+      <section className={styles.searchWrapper}>
+        <div className={styles.titleContainer}>
+          <h1>Funcionários</h1>
+        </div>
+        <SearchBar />
+      </section>
+    </>
   );
 }
