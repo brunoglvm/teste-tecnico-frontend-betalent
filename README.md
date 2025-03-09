@@ -44,7 +44,7 @@ Siga os passos abaixo para rodar o projeto:
 
 ### 1. Clone o Repositório
 
-```bash
+```
 git clone <URL do repositório>
 ```
 
@@ -68,11 +68,11 @@ Para iniciar a API simulada, execute o comando abaixo. Isso iniciará o `json-se
 npm run mock
 ```
 
-> **Nota:** Certifique-se de que o servidor esteja rodando enquanto você executa a aplicação frontend.
+> **Nota:** Certifique-se de que o servidor esteja rodando enquanto você executa a aplicação front-end.
 
-### 4. Inicie a Aplicação Frontend
+### 4. Inicie a Aplicação Front-end
 
-Com o servidor JSON rodando, inicie a aplicação frontend:
+Com o servidor JSON rodando, inicie a aplicação front-end:
 
 ```bash
 # Usando npm
