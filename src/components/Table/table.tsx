@@ -2,7 +2,10 @@ import { useEffect, useState } from "react";
 import styles from "./table.module.css";
 
 import { TableHeader } from "@/components/Table/TableHeader/table-header";
-import { TableRow } from "@/components/Table/TableRow/table-row";
+import {
+  TableRow,
+  TableRowSkeleton,
+} from "@/components/Table/TableRow/table-row";
 
 import { Employee as EmployeeType } from "@/types/employee";
 import { getEmployees } from "@/services/api/employees-api";
@@ -13,6 +16,7 @@ type Props = {
 
 export function Table({ searchQuery }: Props) {
   const [employees, setEmployees] = useState<EmployeeType[]>([]);
+  const [loading, isLoading] = useState(true);
 
   useEffect(() => {
     const fetchEmployees = async () => {
@@ -22,6 +26,7 @@ export function Table({ searchQuery }: Props) {
       } catch (error) {
         console.error("Erro ao buscar funcionários:", error);
       }
+      isLoading(false);
     };
 
     fetchEmployees();
@@ -40,9 +45,13 @@ export function Table({ searchQuery }: Props) {
       <table className={styles.table}>
         <TableHeader />
         <tbody>
-          {filteredEmployees.map((employee) => (
-            <TableRow key={employee.id} employee={employee} />
-          ))}
+          {loading
+            ? Array.from({ length: 8 }).map((_, index) => (
+                <TableRowSkeleton key={index} />
+              ))
+            : filteredEmployees.map((employee) => (
+                <TableRow key={employee.id} employee={employee} />
+              ))}
         </tbody>
       </table>
     </div>

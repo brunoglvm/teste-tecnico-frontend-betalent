@@ -13,13 +13,43 @@
   vertical-align: middle;
 }
 
+.img {
+  width: 10%;
+}
+.name {
+  width: 30%;
+}
+.job,
+.admissionDate,
+.phone {
+  width: 20%;
+}
+
+.circle {
+  display: none;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: var(--white);
+  border-radius: 50%;
+}
+
 @media (max-width: 768px) {
-  th:nth-child(3),
-  th:nth-child(4),
-  th:nth-child(5),
-  td:nth-child(3),
-  td:nth-child(4),
-  td:nth-child(5) {
+  .img {
+    width: 20%;
+  }
+  .name {
+    width: 70%;
+  }
+  .circleColumn {
+    width: 10%;
+  }
+
+  .job,
+  .admissionDate,
+  .phone {
     display: none;
+  }
+  .circle {
+    display: block;
   }
 }

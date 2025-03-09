@@ -11,7 +11,60 @@
 .img {
   width: 2.125rem;
   height: 2.125rem;
-  border-radius: 4.25rem;
+  border-radius: 50%;
   object-fit: cover;
   background-color: var(--white);
+}
+
+/* Skeleton */
+.imgSkeleton {
+  width: 2.125rem;
+  height: 2.125rem;
+  border-radius: 50%;
+  background: linear-gradient(
+    90deg,
+    var(--gray-10),
+    var(--gray-20),
+    var(--gray-10)
+  );
+  background-size: 300% 100%;
+  animation: shimmer 2.5s infinite ease-in-out;
+}
+
+.nameSkeleton,
+.jobSkeleton,
+.admissionDateSkeleton,
+.phoneSkeleton {
+  width: 100%;
+  max-width: 10rem;
+  height: 1rem;
+  border-radius: 0.25rem;
+  background: linear-gradient(
+    90deg,
+    var(--gray-10),
+    var(--gray-20),
+    var(--gray-10)
+  );
+  background-size: 300% 100%;
+  animation: shimmer 2.5s infinite ease-in-out;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .job,
+  .admissionDate,
+  .phone,
+  .jobSkeleton,
+  .admissionDateSkeleton,
+  .phoneSkeleton {
+    display: none;
+  }
 }
