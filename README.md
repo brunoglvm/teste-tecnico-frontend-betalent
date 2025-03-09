@@ -45,7 +45,7 @@ Siga os passos abaixo para rodar o projeto:
 ### 1. Clone o Repositório
 
 ```bash
-git clone <URL-do-seu-repositório>
+git clone <URL do repositório>
 ```
 
 ### 2. Instale as Dependências
