@@ -62,10 +62,14 @@ yarn install
 
 ### 3. Inicie a API Simulada
 
-Para iniciar a API simulada, execute o comando abaixo. Isso iniciará o `json-server` na porta **3001**, onde os dados estarão disponíveis em `http://localhost:3001`.
+Para iniciar a API simulada, execute o comando abaixo. Isso iniciará o `json-server` na porta **3001**, onde os dados estarão disponíveis em `http://localhost:3001`
 
 ```bash
+# Usando npm
 npm run mock
+
+# Usando yarn
+yarn install
 ```
 
 > **Nota:** Certifique-se de que o servidor esteja rodando enquanto você executa a aplicação front-end.
@@ -78,11 +82,11 @@ Com o servidor JSON rodando, inicie a aplicação front-end:
 # Usando npm
 npm run dev
 
-# Ou usando Yarn
+# Usando yarn
 yarn dev
 ```
 
-A aplicação estará disponível em `http://localhost:3000`.
+A aplicação estará disponível em `http://localhost:3000`
 
 ---
 
