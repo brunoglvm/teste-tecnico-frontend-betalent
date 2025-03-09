@@ -6,7 +6,7 @@
     <img src="https://img.shields.io/badge/json-server-%23404d59.svg?style=for-the-badge&logo=json-server&logoColor=white" alt="JSON Server Badge">
 </div>
 
-O objetivo do desafio foi construir uma aplicação frontend que consome dados de uma API simulada (via `json-server`) e exibe uma tabela responsiva com funcionalidades de pesquisa.
+O objetivo do teste técnico foi construir uma aplicação frontend que consome dados de uma API simulada (via `json-server`) e exibe uma tabela responsiva com funcionalidades de pesquisa.
 
 ## Sobre o Projeto
 
@@ -35,8 +35,6 @@ Para rodar o projeto localmente, você precisará das seguintes ferramentas inst
 
 - **Node.js** (v16.x ou superior)
 - **Yarn** ou **npm** (gerenciador de pacotes)
-
-Aqui está a versão atualizada da seção **"Para Rodar a Aplicação"**, com as alterações que você solicitou:
 
 ---
 
