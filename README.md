@@ -6,7 +6,7 @@
     <img src="https://img.shields.io/badge/json-server-%23404d59.svg?style=for-the-badge&logo=json-server&logoColor=white" alt="JSON Server Badge">
 </div>
 
-O objetivo do teste técnico foi construir uma aplicação frontend que consome dados de uma API simulada (via `json-server`) e exibe uma tabela responsiva com funcionalidades de pesquisa.
+O objetivo do teste técnico foi desenvolver uma aplicação front-end que consome dados de uma API simulada (via `json-server`) e exibe uma tabela responsiva com funcionalidades de pesquisa.
 
 ## Sobre o Projeto
 
