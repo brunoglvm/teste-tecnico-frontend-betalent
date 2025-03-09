@@ -1,4 +1,4 @@
-# <img src="./.github/logo.png" width="30" alt="Logo BeTalent" /> Teste Técnico Front-end BeTalent
+# <img src="./.github/logo.png" width="26" alt="Logo BeTalent" /> Teste Técnico Front-end BeTalent
 
 <div>
     <img src="https://img.shields.io/badge/react.js-%2361DAFB.svg?style=for-the-badge&logo=react&logoColor=white" alt="React.js Badge">
