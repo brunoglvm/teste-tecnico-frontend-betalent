@@ -5,7 +5,7 @@ export const getEmployees = async () => {
     const response = await api.get("/employees");
     return response.data;
   } catch (error) {
-    console.error("Erro ao buscar empregados:", error);
-    throw new Error("Erro ao buscar empregados");
+    console.error("Erro ao buscar funcionários:", error);
+    throw new Error("Erro ao buscar funcionários");
   }
 };

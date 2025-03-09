@@ -1,0 +1,25 @@
+.headerContent {
+  position: relative;
+  background-color: var(--blue-primary);
+  box-shadow: var(--shadow-2);
+}
+
+.headerContent th {
+  height: 3rem;
+  padding: 0 2rem;
+  color: var(--white);
+  text-transform: uppercase;
+  text-align: start;
+  vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+  th:nth-child(3),
+  th:nth-child(4),
+  th:nth-child(5),
+  td:nth-child(3),
+  td:nth-child(4),
+  td:nth-child(5) {
+    display: none;
+  }
+}

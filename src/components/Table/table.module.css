@@ -1,0 +1,17 @@
+.container {
+  overflow: hidden;
+  border-radius: 0.5rem 0.5rem 0 0;
+  margin-bottom: 0.5rem;
+  box-shadow: var(--shadow-2);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+@media (max-width: 768px) {
+  .container {
+    box-shadow: none;
+  }
+}

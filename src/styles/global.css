@@ -16,10 +16,14 @@ h1 {
   font-weight: var(--font-weight-md);
 }
 
-h2 {
+h2,
+th {
+  font-size: 1rem;
   font-weight: var(--font-weight-md);
 }
 
-h3 {
+h3,
+td {
+  font-size: 1rem;
   font-weight: var(--font-weight-reg);
 }

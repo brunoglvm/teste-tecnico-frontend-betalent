@@ -1,0 +1,17 @@
+.row {
+  background-color: var(--white);
+  border-top: 2px solid var(--gray-00);
+}
+
+.row td {
+  vertical-align: middle;
+  padding: 0.875rem 2rem;
+}
+
+.img {
+  width: 2.125rem;
+  height: 2.125rem;
+  border-radius: 4.25rem;
+  object-fit: cover;
+  background-color: var(--white);
+}

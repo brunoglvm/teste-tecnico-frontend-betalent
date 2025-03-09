@@ -2,6 +2,7 @@
   display: flex;
   position: relative;
   align-items: center;
+  overflow: hidden;
 }
 
 .input {
@@ -37,6 +38,7 @@
   .container {
     width: 100%;
   }
+
   .input {
     width: 100%;
     padding: 1rem 2.5rem 1rem 1rem;
