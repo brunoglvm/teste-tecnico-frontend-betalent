@@ -86,7 +86,7 @@ npm run dev
 yarn dev
 ```
 
-A aplicação estará disponível em `http://localhost:3000`.
+A aplicação estará disponível em `http://localhost:5173`.
 
 ---
 
