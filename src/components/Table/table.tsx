@@ -16,7 +16,7 @@ type Props = {
 
 export function Table({ searchQuery }: Props) {
   const [employees, setEmployees] = useState<EmployeeType[]>([]);
-  const [loading, isLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const fetchEmployees = async () => {
@@ -26,7 +26,7 @@ export function Table({ searchQuery }: Props) {
       } catch (error) {
         console.error("Erro ao buscar funcionários:", error);
       }
-      isLoading(false);
+      setIsLoading(false);
     };
 
     fetchEmployees();
@@ -45,7 +45,7 @@ export function Table({ searchQuery }: Props) {
       <table className={styles.table}>
         <TableHeader />
         <tbody>
-          {loading
+          {isLoading
             ? Array.from({ length: 8 }).map((_, index) => (
                 <TableRowSkeleton key={index} />
               ))

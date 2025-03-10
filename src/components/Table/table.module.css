@@ -11,6 +11,7 @@
   border-collapse: collapse;
 }
 
+/* Mobile */
 @media (max-width: 768px) {
   .container {
     box-shadow: none;

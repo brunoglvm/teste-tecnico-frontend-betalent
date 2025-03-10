@@ -12,6 +12,7 @@
   fill: #222222;
 }
 
+/* Mobile */
 @media (max-width: 768px) {
   .header {
     padding: 0.25rem 1.375rem;

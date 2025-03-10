@@ -58,6 +58,12 @@
   }
 }
 
+.chevronContainer,
+.detailsRow {
+  display: none;
+}
+
+/* Mobile */
 @media (max-width: 768px) {
   .job,
   .admissionDate,
@@ -66,5 +72,45 @@
   .admissionDateSkeleton,
   .phoneSkeleton {
     display: none;
+  }
+
+  .chevronContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .chevronContainer path {
+    stroke: var(--blue-primary);
+  }
+
+  .chevronButton {
+    display: inline-flex;
+    background: none;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+  }
+
+  .detailsRow.open {
+    display: table-row;
+  }
+
+  .detailsContent {
+    padding: 0.875rem 2rem;
+    background-color: var(--white);
+  }
+
+  .detailsContent h3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.875rem 0;
+    border-bottom: 1px dashed var(--gray-10);
+  }
+
+  .highlight {
+    font-weight: var(--font-weight-md);
   }
 }
